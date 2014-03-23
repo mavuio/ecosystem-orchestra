@@ -31,6 +31,7 @@ class EcoAsset
             'jquery'=>'/bower_components/jquery/dist/jquery.min.js',
             'angular'=>'/bower_components/angular/angular.min.js',
             'backend-css'=>'/css/backend/backend.css',
+            'frontend-css'=>'/css/frontend/frontend.css',
             'fontawesome4'=>'/bower_components/font-awesome/css/font-awesome.min.css',
             );
         return $map[$key];
