@@ -24,6 +24,20 @@ class EcoAsset
         $this->env()->add($key,$url,$dependencies);
     }
 
+    public function styles()
+    {
+        $ret=$this->env()->styles();
+        $ret=preg_replace('#^.*removed\.css.*$#mi','',$ret);
+        return $ret;
+    }
+
+    public function scripts()
+    {
+        $ret=$this->env()->scripts();
+        $ret=preg_replace('#^.*removed\.js.*$#mi','',$ret);
+        return $ret;
+    }
+
 
     public function getAssetUrlForKey($key)
     {
